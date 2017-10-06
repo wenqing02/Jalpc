@@ -5,7 +5,7 @@ tags: [python,neural network]
 ---
 
    <!-- ![1-4-4XkuTZopk59wOV6E-RCg.jpeg]({{site.img_path}}/1-4-4XkuTZopk59wOV6E-RCg.jpeg) -->
-   <img src="{{site.img_path}}/1-4-4XkuTZopk59wOV6E-RCg.jpeg" width="50%" style="margin: 0 auto 100px;">
+   <img src="{{site.img_path}}/1-4-4XkuTZopk59wOV6E-RCg.jpeg" width="50%" style="margin: 0 auto 100px;display: block;">
 
 作为我学习AI的一部分，我给自己定的目标是用Python构建一个简单的神经网络。为了真正理解它，我没有使用神经网络库而是从原理上直接构建了它。多亏了Andrew Trask写的一篇极好的博客我实现了我的目标。下面就是这9行代码：
 
