@@ -229,3 +229,6 @@ Considering new situation [1, 0, 0] -> ?:
 传统的计算机城西一般情况不能学习，神经网络最神奇的是它可以自己学习，适应，然后解答新的情况，就像人的大脑。
 
 当然一个神经元智能完成一个简单的任务，但是如果我们把数亿个神经元连接在一起会产生什么样的效果？
+
+
+原文连接： https://medium.com/technology-invention-and-more/how-to-build-a-simple-neural-network-in-9-lines-of-python-code-cc8f23647ca1
