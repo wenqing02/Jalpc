@@ -5,13 +5,13 @@ tags: [python,neural network]
 ---
 
    <!-- ![1-4-4XkuTZopk59wOV6E-RCg.jpeg]({{site.img_path}}/1-4-4XkuTZopk59wOV6E-RCg.jpeg) -->
-   <img src="{{site.img_path}}/1-4-4XkuTZopk59wOV6E-RCg.jpeg" width="100%">
+   <img src="{{site.img_path}}/1-4-4XkuTZopk59wOV6E-RCg.jpeg" width="50%">
 
 作为我学习AI的一部分，我给自己定的目标是用Python构建一个简单的神经网络。为了真正理解它，我没有使用神经网络库而是从原理上直接构建了它。多亏了Andrew Trask写的一篇极好的博客我实现了我的目标。下面就是这9行代码：
 
-```(python)
+```python
 from numpy import exp,array,random,dot
-wtraining_set_inputs = array([[0,0,1],[1,1,1],[1,0,1],[0,1,1]])
+training_set_inputs = array([[0,0,1],[1,1,1],[1,0,1],[0,1,1]])
 training_set_outputs = array([[0,1,1,0]])
 random.seed(1)
 synaptic_weeights = 2 * random.random((3,1)) - 1
@@ -29,12 +29,12 @@ print 1/(1+exp(-(dot(array([1,0,0]),synaptic_weeights))))
 
 
    <!-- ![1-HDWhvFz5t0KAjIAIzjKR1w.png]({{site.img_path}}/1-HDWhvFz5t0KAjIAIzjKR1w.png) -->
-   <img src="{{site.img_path}}/1-HDWhvFz5t0KAjIAIzjKR1w.png" width="100%">
+   <img src="{{site.img_path}}/1-HDWhvFz5t0KAjIAIzjKR1w.png" width="50%">
 
 我们将训练一个解决简单问题的神经网络，下面4个Example叫做训练集，你可以计算出它的模式么？是0还是1？
 
    <!-- ![1-nEooKljI8XbKQh4cFbZu1Q.png]({{site.img_path}}/1-nEooKljI8XbKQh4cFbZu1Q.png) -->
-   <img src="{{site.img_path}}/1-nEooKljI8XbKQh4cFbZu1Q.png" width="100%">
+   <img src="{{site.img_path}}/1-nEooKljI8XbKQh4cFbZu1Q.png" width="50%">
 
 也许你已经注意到，输出的值总是等于最左边输入的值，因此这个答案应该等于1.
 
@@ -48,7 +48,7 @@ print 1/(1+exp(-(dot(array([1,0,0]),synaptic_weeights))))
 
 
    <!-- ![1--1trgA6DUEaafJZv3k0mGw.jpeg]({{site.img_path}}/1--1trgA6DUEaafJZv3k0mGw.jpeg) -->
-   <img src="{{site.img_path}}/1--1trgA6DUEaafJZv3k0mGw.jpeg" width="100%">
+   <img src="{{site.img_path}}/1--1trgA6DUEaafJZv3k0mGw.jpeg" width="50%">
 
 最终，神经网络的权重会因为训练集得到最优解，如果我们让神经网络去“思考”满足这个模式的新的情况，那么它也可以做出很好的预测。
 
@@ -56,22 +56,22 @@ print 1/(1+exp(-(dot(array([1,0,0]),synaptic_weeights))))
 
 也许你正在考虑，哪一个特殊的公式可以计算神经网络的输出？首先我们把每一个权重与输入的乘积的和作为神经网络的输入，公式如下：
    <!-- ![1-RV7-CFkmmByfcXKkPcbAYQ.png]({{site.img_path}}/1-RV7-CFkmmByfcXKkPcbAYQ.png) -->
-   <img src="{{site.img_path}}/1-RV7-CFkmmByfcXKkPcbAYQ.png" width="100%">
+   <img src="{{site.img_path}}/1-RV7-CFkmmByfcXKkPcbAYQ.png" width="50%">
 
 下面我们需要标准化它，以至于让结果在0-1的范围内，我们使用Sinmoid函数来实现它：
 
    <!-- ![1-5il5GLo0gamypklQQ_z0AA.png]({{site.img_path}}/1-5il5GLo0gamypklQQ_z0AA.png) -->
-   <img src="{{site.img_path}}/1-5il5GLo0gamypklQQ_z0AA.png" width="100%">
+   <img src="{{site.img_path}}/1-5il5GLo0gamypklQQ_z0AA.png" width="50%">
 
 它的函数图像是一个S型曲线，如下图所示：
 
    <!-- ![1-sK6hjHszCwTE8GqtKNe1Yg.png]({{site.img_path}}/1-sK6hjHszCwTE8GqtKNe1Yg.png) -->
-   <img src="{{site.img_path}}/1-sK6hjHszCwTE8GqtKNe1Yg.png" width="100%">
+   <img src="{{site.img_path}}/1-sK6hjHszCwTE8GqtKNe1Yg.png" width="50%">
 
 把一个公式带入到第二个公式中，我们得到的最终神经网络输出公式是：
 
    <!-- ![1-7YdyG6fc6f6zMmx3l0ZGsQ.png]({{site.img_path}}/1-7YdyG6fc6f6zMmx3l0ZGsQ.png) -->
-   <img src="{{site.img_path}}/1-7YdyG6fc6f6zMmx3l0ZGsQ.png" width="100%">
+   <img src="{{site.img_path}}/1-7YdyG6fc6f6zMmx3l0ZGsQ.png" width="50%">
 你可能已经注意到我们没有用最小阈值，这样做是为了让事情变得更简单。
 
 ## 调整权重的公式
@@ -79,7 +79,7 @@ print 1/(1+exp(-(dot(array([1,0,0]),synaptic_weeights))))
 在循环训练期间，我们调整权重，但是我们是怎样调整权重的呢？我们使用的是“Error Weighted Derivative”公式：
 
    <!-- ![1-SQBjpbBcCT3lTQlPEdr1eg.png]({{site.img_path}}/1-SQBjpbBcCT3lTQlPEdr1eg.png) -->
-   <img src="{{site.img_path}}/1-SQBjpbBcCT3lTQlPEdr1eg.png" width="100%">
+   <img src="{{site.img_path}}/1-SQBjpbBcCT3lTQlPEdr1eg.png" width="50%">
 
 为什么是这个公式呢？首先我们要使调整与误差的大小成比例，第二，我们乘以0或1的输入，如果输入是0，我们便不做调整。最后，我们乘以S型曲线的梯度。为了理解最后一条，考虑一下几个方面：
 1.我们使用S型曲线去计算神经网络的输出。
@@ -89,11 +89,11 @@ print 1/(1+exp(-(dot(array([1,0,0]),synaptic_weeights))))
 S型曲线的梯度可以由下面公式计算：
 
    <!-- ![1-HdHm9u3_wjwBPmwuLg3D3g.png]({{site.img_path}}/1-HdHm9u3_wjwBPmwuLg3D3g.png) -->
-   <img src="{{site.img_path}}/1-HdHm9u3_wjwBPmwuLg3D3g.png" width="100%">
+   <img src="{{site.img_path}}/1-HdHm9u3_wjwBPmwuLg3D3g.png" width="50%">
 把第二个公式带入第一个公式，我们最终可以得到调整权重值的公式：
 
    <!-- ![1-HdHm9u3_wjwBPmwuLg3D3g.png]({{site.img_path}}/1-HdHm9u3_wjwBPmwuLg3D3g.png) -->
-   <img src="{{site.img_path}}/1-HdHm9u3_wjwBPmwuLg3D3g.png" width="100%">
+   <img src="{{site.img_path}}/1-HdHm9u3_wjwBPmwuLg3D3g.png" width="50%">
 
 这是一个可选择的公式，它可以让神经元学习更快，这个公式也很简单。
 
@@ -115,7 +115,7 @@ training_set_outputs = array([0,1,1,0]).T
 .T是转置，计算机存储数据如下：
 
    <!-- ![1-2VAykewNiKxU-gFy3BBh_w.png]({{site.img_path}}/1-2VAykewNiKxU-gFy3BBh_w.png) -->
-   <img src="{{site.img_path}}/1-2VAykewNiKxU-gFy3BBh_w.png" width="100%">
+   <img src="{{site.img_path}}/1-2VAykewNiKxU-gFy3BBh_w.png" width="50%">
 
 好的，我想我们已经为更美观的源码做好了准备，在我给你之前，我总结了几个最终的思想。
 
