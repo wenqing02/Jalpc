@@ -5,7 +5,7 @@ tags: [python,neural network]
 ---
 
    <!-- ![1-4-4XkuTZopk59wOV6E-RCg.jpeg]({{site.img_path}}/1-4-4XkuTZopk59wOV6E-RCg.jpeg) -->
-   <img src="{{site.img_path}}/1-4-4XkuTZopk59wOV6E-RCg.jpeg" width="50%">
+   <img src="{{site.img_path}}/1-4-4XkuTZopk59wOV6E-RCg.jpeg" width="50%" style="margin: 0 auto 100px;">
 
 作为我学习AI的一部分，我给自己定的目标是用Python构建一个简单的神经网络。为了真正理解它，我没有使用神经网络库而是从原理上直接构建了它。多亏了Andrew Trask写的一篇极好的博客我实现了我的目标。下面就是这9行代码：
 
@@ -107,7 +107,7 @@ S型曲线的梯度可以由下面公式计算：
 
 例如我们可以使用array()的方法构建上面提到的训练集：
 
-```(python)
+```python
 training_set_inputs = array([[0,0,1],[1,1,1],[1,0,1],[0,1,1]])
 training_set_outputs = array([0,1,1,0]).T
 ```
@@ -122,7 +122,7 @@ training_set_outputs = array([0,1,1,0]).T
 我对每一行代码都增加了注解，值得注意的是，每一次的迭代，我们同时处理整个训练集。因此我们的变量是个矩阵。下面是用python下的完整的代码：
 
 
-```(python)
+```python
 from numpy import exp, array, random, dot
 
 
