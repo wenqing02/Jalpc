@@ -29,7 +29,7 @@ print 1/(1+exp(-(dot(array([1,0,0]),synaptic_weeights))))
 
 
    <!-- ![1-HDWhvFz5t0KAjIAIzjKR1w.png]({{site.img_path}}/1-HDWhvFz5t0KAjIAIzjKR1w.png) -->
-   <img src="{{site.img_path}}/1-HDWhvFz5t0KAjIAIzjKR1w.png" width="50%">
+   <img src="{{site.img_path}}/1-HDWhvFz5t0KAjIAIzjKR1w.png" width="10%">
 
 我们将训练一个解决简单问题的神经网络，下面4个Example叫做训练集，你可以计算出它的模式么？是0还是1？
 
