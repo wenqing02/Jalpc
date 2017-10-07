@@ -29,12 +29,12 @@ print 1/(1+exp(-(dot(array([1,0,0]),synaptic_weeights))))
 
 
    <!-- ![1-HDWhvFz5t0KAjIAIzjKR1w.png]({{site.img_path}}/1-HDWhvFz5t0KAjIAIzjKR1w.png) -->
-   <img src="{{site.img_path}}/1-HDWhvFz5t0KAjIAIzjKR1w.png" width="10%">
+   <img src="{{site.img_path}}/1-HDWhvFz5t0KAjIAIzjKR1w.png" width="20%">
 
 我们将训练一个解决简单问题的神经网络，下面4个Example叫做训练集，你可以计算出它的模式么？是0还是1？
 
    <!-- ![1-nEooKljI8XbKQh4cFbZu1Q.png]({{site.img_path}}/1-nEooKljI8XbKQh4cFbZu1Q.png) -->
-   <img src="{{site.img_path}}/1-nEooKljI8XbKQh4cFbZu1Q.png" width="50%">
+   <img src="{{site.img_path}}/1-nEooKljI8XbKQh4cFbZu1Q.png" width="30%">
 
 也许你已经注意到，输出的值总是等于最左边输入的值，因此这个答案应该等于1.
 
@@ -48,7 +48,7 @@ print 1/(1+exp(-(dot(array([1,0,0]),synaptic_weeights))))
 
 
    <!-- ![1--1trgA6DUEaafJZv3k0mGw.jpeg]({{site.img_path}}/1--1trgA6DUEaafJZv3k0mGw.jpeg) -->
-   <img src="{{site.img_path}}/1--1trgA6DUEaafJZv3k0mGw.jpeg" width="50%">
+   <img src="{{site.img_path}}/1--1trgA6DUEaafJZv3k0mGw.jpeg" width="30%">
 
 最终，神经网络的权重会因为训练集得到最优解，如果我们让神经网络去“思考”满足这个模式的新的情况，那么它也可以做出很好的预测。
 
@@ -57,7 +57,7 @@ print 1/(1+exp(-(dot(array([1,0,0]),synaptic_weeights))))
 也许你正在考虑，哪一个特殊的公式可以计算神经网络的输出？首先我们把每一个权重与输入的乘积的和作为神经网络的输入，公式如下：
 
    <!-- ![1-RV7-CFkmmByfcXKkPcbAYQ.png]({{site.img_path}}/1-RV7-CFkmmByfcXKkPcbAYQ.png) -->
-   <img src="{{site.img_path}}/1-RV7-CFkmmByfcXKkPcbAYQ.png" width="50%">
+   <img src="{{site.img_path}}/1-RV7-CFkmmByfcXKkPcbAYQ.png" width="20%">
 
 下面我们需要标准化它，以至于让结果在0-1的范围内，我们使用Sinmoid函数来实现它：
 
@@ -67,7 +67,7 @@ print 1/(1+exp(-(dot(array([1,0,0]),synaptic_weeights))))
 它的函数图像是一个S型曲线，如下图所示：
 
    <!-- ![1-sK6hjHszCwTE8GqtKNe1Yg.png]({{site.img_path}}/1-sK6hjHszCwTE8GqtKNe1Yg.png) -->
-   <img src="{{site.img_path}}/1-sK6hjHszCwTE8GqtKNe1Yg.png" width="50%">
+   <img src="{{site.img_path}}/1-sK6hjHszCwTE8GqtKNe1Yg.png" width="40%">
 
 把一个公式带入到第二个公式中，我们得到的最终神经网络输出公式是：
 
@@ -118,7 +118,7 @@ training_set_outputs = array([0,1,1,0]).T
 .T是转置，计算机存储数据如下：
 
    <!-- ![1-2VAykewNiKxU-gFy3BBh_w.png]({{site.img_path}}/1-2VAykewNiKxU-gFy3BBh_w.png) -->
-   <img src="{{site.img_path}}/1-2VAykewNiKxU-gFy3BBh_w.png" width="50%">
+   <img src="{{site.img_path}}/1-2VAykewNiKxU-gFy3BBh_w.png" width="10%">
 
 好的，我想我们已经为更美观的源码做好了准备，在我给你之前，我总结了几个最终的思想。
 
