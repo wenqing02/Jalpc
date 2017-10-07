@@ -62,7 +62,7 @@ print 1/(1+exp(-(dot(array([1,0,0]),synaptic_weeights))))
 下面我们需要标准化它，以至于让结果在0-1的范围内，我们使用Sinmoid函数来实现它：
 
    <!-- ![1-5il5GLo0gamypklQQ_z0AA.png]({{site.img_path}}/1-5il5GLo0gamypklQQ_z0AA.png) -->
-   <img src="{{site.img_path}}/1-5il5GLo0gamypklQQ_z0AA.png" width="20%">
+   <img src="{{site.img_path}}/1-5il5GLo0gamypklQQ_z0AA.png" width="10%">
 
 它的函数图像是一个S型曲线，如下图所示：
 
@@ -72,7 +72,7 @@ print 1/(1+exp(-(dot(array([1,0,0]),synaptic_weeights))))
 把一个公式带入到第二个公式中，我们得到的最终神经网络输出公式是：
 
    <!-- ![1-7YdyG6fc6f6zMmx3l0ZGsQ.png]({{site.img_path}}/1-7YdyG6fc6f6zMmx3l0ZGsQ.png) -->
-   <img src="{{site.img_path}}/1-7YdyG6fc6f6zMmx3l0ZGsQ.png" width="50%">
+   <img src="{{site.img_path}}/1-7YdyG6fc6f6zMmx3l0ZGsQ.png" width="30%">
 
 你可能已经注意到我们没有用最小阈值，这样做是为了让事情变得更简单。
 
