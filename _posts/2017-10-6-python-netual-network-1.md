@@ -210,7 +210,7 @@ if __name__ == "__main__":
 python main.py
 
 你将要得到的结果是：
-```(python)
+```python
 Random starting synaptic weights:
 [[-0.16595599]
 [ 0.44064899]
