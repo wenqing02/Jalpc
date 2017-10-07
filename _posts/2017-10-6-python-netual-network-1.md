@@ -57,12 +57,12 @@ print 1/(1+exp(-(dot(array([1,0,0]),synaptic_weeights))))
 也许你正在考虑，哪一个特殊的公式可以计算神经网络的输出？首先我们把每一个权重与输入的乘积的和作为神经网络的输入，公式如下：
 
    <!-- ![1-RV7-CFkmmByfcXKkPcbAYQ.png]({{site.img_path}}/1-RV7-CFkmmByfcXKkPcbAYQ.png) -->
-   <img src="{{site.img_path}}/1-RV7-CFkmmByfcXKkPcbAYQ.png" width="20%">
+   <img src="{{site.img_path}}/1-RV7-CFkmmByfcXKkPcbAYQ.png" width="50%">
 
 下面我们需要标准化它，以至于让结果在0-1的范围内，我们使用Sinmoid函数来实现它：
 
    <!-- ![1-5il5GLo0gamypklQQ_z0AA.png]({{site.img_path}}/1-5il5GLo0gamypklQQ_z0AA.png) -->
-   <img src="{{site.img_path}}/1-5il5GLo0gamypklQQ_z0AA.png" width="50%">
+   <img src="{{site.img_path}}/1-5il5GLo0gamypklQQ_z0AA.png" width="20%">
 
 它的函数图像是一个S型曲线，如下图所示：
 
