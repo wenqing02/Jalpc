@@ -55,6 +55,7 @@ print 1/(1+exp(-(dot(array([1,0,0]),synaptic_weeights))))
 ## 计算神经网络输出的公式
 
 也许你正在考虑，哪一个特殊的公式可以计算神经网络的输出？首先我们把每一个权重与输入的乘积的和作为神经网络的输入，公式如下：
+
    <!-- ![1-RV7-CFkmmByfcXKkPcbAYQ.png]({{site.img_path}}/1-RV7-CFkmmByfcXKkPcbAYQ.png) -->
    <img src="{{site.img_path}}/1-RV7-CFkmmByfcXKkPcbAYQ.png" width="50%">
 
@@ -72,6 +73,7 @@ print 1/(1+exp(-(dot(array([1,0,0]),synaptic_weeights))))
 
    <!-- ![1-7YdyG6fc6f6zMmx3l0ZGsQ.png]({{site.img_path}}/1-7YdyG6fc6f6zMmx3l0ZGsQ.png) -->
    <img src="{{site.img_path}}/1-7YdyG6fc6f6zMmx3l0ZGsQ.png" width="50%">
+
 你可能已经注意到我们没有用最小阈值，这样做是为了让事情变得更简单。
 
 ## 调整权重的公式
@@ -90,6 +92,7 @@ S型曲线的梯度可以由下面公式计算：
 
    <!-- ![1-HdHm9u3_wjwBPmwuLg3D3g.png]({{site.img_path}}/1-HdHm9u3_wjwBPmwuLg3D3g.png) -->
    <img src="{{site.img_path}}/1-HdHm9u3_wjwBPmwuLg3D3g.png" width="50%">
+
 把第二个公式带入第一个公式，我们最终可以得到调整权重值的公式：
 
    <!-- ![1-HdHm9u3_wjwBPmwuLg3D3g.png]({{site.img_path}}/1-HdHm9u3_wjwBPmwuLg3D3g.png) -->
